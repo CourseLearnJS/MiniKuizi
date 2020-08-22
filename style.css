@@ -1,0 +1,113 @@
+:root {
+    --body-normal-color: 173;  
+    --body-correct-color: 148;
+    --body-wrong-color: 0;
+  }
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--body-normal-color), 11%, 56%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.correct {
+    background-color: hsl(var(--body-correct-color), 40%, 46%);
+}
+
+body.wrong {
+    background-color: hsl(var(--body-wrong-color), 77%, 46%);
+}
+
+/*Container*/
+
+.container {
+    padding: 10px 10px 45px 10px;
+    width: 900px;
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 5px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat( 2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px;
+    background-color: hsl( var(--body-normal-color), 40%, 56%);
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid hsl( var(--body-normal-color), 15%, 56%);
+    font-size: 1.2em;
+    outline: none;
+}
+.btn:hover {
+    background-color: hsl( var(--body-normal-color), 11%, 56%);
+}
+
+.btn.correct {
+    background-color: hsl(var(--body-correct-color), 40%, 46%);
+    border: 1px solid hsl(var(--body-correct-color), 20%, 46%);
+}
+
+.btn.wrong {
+    background-color: hsl(var(--body-wrong-color), 77%, 46%);
+    border: 1px solid hsl(var(--body-wrong-color), 50%, 46%);
+}   
+
+.btn.correct:hover {
+    background-color: hsl(var(--body-correct-color), 50%, 46%);
+    border: 1px solid hsl(var(--body-correct-color), 25%, 46%);
+}
+
+.btn.wrong:hover {
+    background-color: hsl(var(--body-wrong-color), 85%, 46%);
+    border: 1px solid hsl(var(--body-wrong-color), 55%, 46%);
+} 
+
+/*start-next-buttons*/
+
+.start-next-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.start-btn, .next-btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: hsl(var(--body-correct-color), 40%, 46%);
+    border: 1px solid hsl(var(--body-correct-color), 20%, 46%);
+}
+
+.start-btn:hover, .next-btn:hover {
+    background-color: hsl(var(--body-correct-color), 50%, 46%);
+    border: 1px solid hsl(var(--body-correct-color), 25%, 46%);
+}
+
+.hide {
+    display: none;
+}
+h1 {
+    float: left;
+}
+
+h2 {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    width: 0;
+}
